@@ -1,0 +1,10 @@
+.Card {
+    border: 1px solid black;
+    width: fit-content;
+    .Card-Header {
+        background-color: teal;
+    }
+    .Card-Body {
+        background-color: #ffffff;
+    }
+}
