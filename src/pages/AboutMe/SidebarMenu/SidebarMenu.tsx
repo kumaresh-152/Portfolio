@@ -1,10 +1,9 @@
-import { Component } from "react";
-import { Sidebar } from "../../../store/model";
-import './SidebarMenu.scss'
-
+import { Component } from 'react';
+import { Sidebar } from '../../../store/model';
+import './SidebarMenu.scss';
 
 interface SidebarMenuProps {
-    list: Sidebar[]
+    list: Sidebar[];
     onClick: Function;
 }
 
@@ -15,30 +14,31 @@ class SidebarMenu extends Component<SidebarMenuProps> {
         let sideMenuList = list.map((x: Sidebar, index: number) => (
             <div
                 key={`sideMenu${x.title}${index}`}
-                className={"sideMenu-list-wrapper"}
-                onClick={() => { this.props.onClick(x.title) }}
+                className={'sideMenu-list-wrapper'}
+                onClick={() => { this.props.onClick(x.title); }}
             >
                 {x.icon}
-                <span className={"sideMenu-list-title"}>
+                <span className={'sideMenu-list-title'}>
                     &nbsp;{x.title}
                 </span>
             </div >
-        ))
+        ));
 
         return (
-            <div className={"SideMenu-wrapper"}>
-                <div className={"sideMenu-name-wrapper"}>
+            <div className={'SideMenu-wrapper'}>
+                <div className={'sideMenu-name-wrapper'}>
                     <div
-                        className={"sideMenu-name"}
+                        className={'sideMenu-name'}
                         onClick={() => {
-                            let node = document.getElementById("About");
+                            let node = document.getElementById('About');
                             if (node) {
                                 window.scrollTo({
                                     top: node.offsetTop,
-                                    behavior: "smooth"
+                                    behavior: 'smooth'
                                 });
                             }
-                        }}>
+                        }}
+                    >
                         <h2 className="name">
                             B Kumaresh
                         </h2>
@@ -47,11 +47,11 @@ class SidebarMenu extends Component<SidebarMenuProps> {
                         </span>
                     </div>
                 </div>
-                <div className={"sideMenu-lists"}>
+                <div className={'sideMenu-lists'}>
                     {sideMenuList}
                 </div>
             </div >
-        )
+        );
     }
 }
 

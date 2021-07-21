@@ -1,6 +1,6 @@
-import { Component } from "react";
-import { Card } from "react-bootstrap";
-import { ProjectModel } from "../../../store/model";
+import { Component } from 'react';
+import { Card } from 'react-bootstrap';
+import { ProjectModel } from '../../../store/model';
 import './Projects.scss';
 
 interface ProjectProps {
@@ -11,8 +11,8 @@ class Project extends Component<ProjectProps> {
 
     render() {
         let projects = this.props.data.map((data: ProjectModel, index: number) => (
-            <Card className={"project-cards"} key={`Project${index}`}>
-                <Card.Img className={data.imageLink ? "image" : "disp-none"} variant="top" src={data.imageLink} />
+            <Card className={'project-cards'} key={`Project${index}`}>
+                <Card.Img className={data.imageLink ? 'image' : 'disp-none'} variant="top" src={data.imageLink} />
                 <Card.Body>
                     <Card.Title>
                         {data.title}
@@ -20,7 +20,7 @@ class Project extends Component<ProjectProps> {
                     <Card.Text>
                         {data.description}
                     </Card.Text>
-                    <div className={"link-wrapper"}>
+                    <div className={'link-wrapper'}>
                         {
                             data.githubLink ?
                                 <Card.Link
@@ -46,11 +46,11 @@ class Project extends Component<ProjectProps> {
                     </div>
                 </Card.Body>
             </Card>
-        ))
+        ));
 
         return (
-            this.props.data.length > 0 ? projects : <div className={"Loader"} />
-        )
+            this.props.data.length > 0 ? projects : <div className={'Loader'} />
+        );
     }
 }
 

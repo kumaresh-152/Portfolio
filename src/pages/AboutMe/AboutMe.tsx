@@ -1,27 +1,26 @@
 /* eslint-disable no-console */
 
-import { Instagram } from "@material-ui/icons";
-import React, { Component } from "react";
-import { CertificationModel, ContactModel, EducationModel, ExperienceModel, ProjectModel, SkillSetModel } from "../../store/model";
+import { Instagram } from '@material-ui/icons';
+import React, { Component } from 'react';
+import { CertificationModel, ContactModel, EducationModel, ExperienceModel, ProjectModel, SkillSetModel } from '../../store/model';
 import './AboutMe.scss';
-import Certification from "./Certification/Certification";
-import Contact from "./Contact/Contact";
-import Education from "./Education/Education";
-import Experience from "./Experience/Experience";
-import Project from "./Projects/Projects";
-import Skills from "./Skills/Skills";
-
+import Certification from './Certification/Certification';
+import Contact from './Contact/Contact';
+import Education from './Education/Education';
+import Experience from './Experience/Experience';
+import Project from './Projects/Projects';
+import Skills from './Skills/Skills';
 
 interface AboutMeProps {
     education: EducationModel[];
     certification: CertificationModel[];
     experience: ExperienceModel[];
-    skills: SkillSetModel[],
-    contact: ContactModel[]
-    projects: ProjectModel[]
+    skills: SkillSetModel[];
+    contact: ContactModel[];
+    projects: ProjectModel[];
 }
 
-class AboutMe extends Component<AboutMeProps>{
+class AboutMe extends Component<AboutMeProps> {
 
     constructor(allProps: AboutMeProps) {
         super(allProps);
@@ -29,14 +28,14 @@ class AboutMe extends Component<AboutMeProps>{
 
     render() {
         return (
-            <div className={"AboutMe-Wrapper"}>
+            <div className={'AboutMe-Wrapper'}>
                 <div className="About-wrapper" id="About">
-                    <div className={"About-title"}>
+                    <div className={'About-title'}>
                         <span>
                             About
                         </span>
                     </div>
-                    <div className={"About-list"}>
+                    <div className={'About-list'}>
                         {/* 
                         Let's make something special.
                         That's why I’m excited to make a big impact at a high growth company.
@@ -71,79 +70,79 @@ class AboutMe extends Component<AboutMeProps>{
                     </div>
                 </div>
                 <div className="Education-wrapper" id="Education">
-                    <div className={"Education-title"}>
+                    <div className={'Education-title'}>
                         <span>
                             Education
                         </span>
                     </div>
-                    <div className={"Education-list"}>
+                    <div className={'Education-list'}>
                         <Education
                             education={this.props.education}
                         />
                     </div>
                 </div>
                 <div className="Experience-wrapper" id="Experience">
-                    <div className={"Experience-title"}>
+                    <div className={'Experience-title'}>
                         <span>
                             Experience
                         </span>
                     </div>
-                    <div className={"Experience-list"}>
+                    <div className={'Experience-list'}>
                         <Experience
                             experience={this.props.experience}
                         />
                     </div>
                 </div>
                 <div className="SkillSet-wrapper" id="SkillSet">
-                    <div className={"SkillSet-title"}>
+                    <div className={'SkillSet-title'}>
                         <span>
                             Skills
                         </span>
                     </div>
-                    <div className={"SkillSet-list"}>
+                    <div className={'SkillSet-list'}>
                         <Skills
                             skillset={this.props.skills}
                         />
                     </div>
                 </div>
                 <div className="Projects-wrapper" id="Projects">
-                    <div className={"Projects-title"}>
+                    <div className={'Projects-title'}>
                         <span>
                             Project
                         </span>
                     </div>
-                    <div className={"Projects-list"}>
+                    <div className={'Projects-list'}>
                         <Project
                             data={this.props.projects}
                         />
                     </div>
                 </div>
                 <div className="Certification-wrapper" id="Certification">
-                    <div className={"Certification-title"}>
+                    <div className={'Certification-title'}>
                         <span>
                             Certification
                         </span>
                     </div>
-                    <div className={"Certification-list"}>
+                    <div className={'Certification-list'}>
                         <Certification
                             certificationList={this.props.certification}
                         />
                     </div>
                 </div>
                 <div className="Contact-wrapper" id="Contact">
-                    <div className={"Contact-title"}>
+                    <div className={'Contact-title'}>
                         <span>
                             Contact
                         </span>
                     </div>
-                    <div className={"Contact-list"}>
+                    <div className={'Contact-list'}>
                         <Contact
                             contactList={this.props.contact}
                         />
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

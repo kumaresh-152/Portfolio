@@ -1,10 +1,10 @@
 export interface Sidebar {
-    icon: any;
+    icon: string;
     title: string;
 }
 
 export interface EducationModel {
-    institution: string
+    institution: string;
     address: string;
     degree: string;
     yearOfPassing: string;
@@ -47,8 +47,8 @@ export interface CertificationModel {
 }
 
 export interface ContactModel {
-    icon: any;
+    icon: string;
     value: string;
     url?: string;
-    isLink: boolean
+    isLink: boolean;
 }
