@@ -1,0 +1,39 @@
+@import "../../../styles/variable.scss";
+
+.darkMode-sideMenu-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    background: #404040;
+    overflow: auto;
+    .sideMenu-name-wrapper {
+        border-bottom: 1px solid #202020;
+        padding: 1rem;
+        .sideMenu-name {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+            }
+            .name {
+                color: $text-secondary-color;
+            }
+            .designation {
+                color: $title-primary-color;
+            }
+        }
+    }
+    .sideMenu-lists {
+        color: $text-secondary-color;
+        .sideMenu-list-wrapper {
+            display: flex;
+            padding: 1rem;
+            &:hover {
+                cursor: pointer;
+                background-color: $colou1;
+            }
+        }
+    }
+}

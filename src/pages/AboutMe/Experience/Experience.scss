@@ -1,0 +1,51 @@
+@import "../../../styles/variable.scss";
+
+.darkMode-Experience {
+    .vertical-timeline {
+        .vertical-timeline-element--work {
+            .vertical-timeline-element-icon {
+                background: #606060 !important;
+                box-shadow: 0 0 0 4px #a0a0a0, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+            }
+            .vertical-timeline-element-content {
+                -webkit-box-shadow: none;
+                box-shadow: 16px 16px 32px 0px rgb(0 0 0 / 40%);
+                background: #404040;
+                .vertical-timeline-element-content-arrow {
+                    border-right: 7px solid #404040;
+                }
+            }
+            .role {
+                color: #e0e0e0;
+            }
+            .company {
+                text-align: "left";
+                color: #101010;
+            }
+            .address {
+                text-align: "left";
+                color: #101010;
+                margin-bottom: 1vh;
+            }
+            .job-description {
+                margin-bottom: 1vh;
+                color: #909090;
+                font-weight: normal;
+            }
+            .date {
+                margin-top: 1vh;
+                color: #b0b0b0;
+            }
+        }
+        .vertical-timeline-element--no-children {
+            .vertical-timeline-element-icon {
+                background: #606060 !important;
+                box-shadow: 0 0 0 4px #a0a0a0, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+            }
+        }
+    }
+    .vertical-timeline::before {
+        height: 98%;
+        background: #606060;
+    }
+}

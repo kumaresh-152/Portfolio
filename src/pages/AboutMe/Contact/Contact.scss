@@ -1,0 +1,19 @@
+.dark-Card {
+    // background: #404040;
+    padding: 2%;
+    .contact-wrapper {
+        padding: 1%;
+        display: flex;
+        color: #b0b0b0;
+        .hyperlink {
+            color: #b0b0b0;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 3px solid #009688 !important;
+            }
+        }
+        .MuiSvgIcon-root {
+            width: 5%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.darkMode-technologyBadge-wrapper {
+    display: flex;
+    row-gap: 1vh;
+    column-gap: 1vh;
+    flex-wrap: wrap;
+    padding-top: 0.5vh;
+    .badge-pill {
+        font-size: 11px !important;
+        text-align: left !important;
+        padding: 5px 8px 5px 8px !important;
+        vertical-align: baseline;
+        background-color: #505050 !important;
+        color: #a1a1a1;
+        font-weight: 400;
+        padding-right: 0.6em;
+        padding-left: 0.6em;
+        border-radius: 10rem;
+        text-transform: uppercase;
+    }
+}

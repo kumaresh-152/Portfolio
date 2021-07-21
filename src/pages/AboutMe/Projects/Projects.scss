@@ -1,0 +1,65 @@
+.project-cards {
+    background: #404040;
+    box-shadow: 16px 16px 32px 0px rgb(0 0 0 / 40%);
+    border: 1px solid #a0a0a0;
+    border-radius: 5%;
+    padding: 2vh;
+    width: 20%;
+    .image {
+        width: 100%;
+        border: 1px solid #606060;
+    }
+    .card-title {
+        overflow-wrap: break-word;
+        padding: 2vh 2vh 2vh 0;
+        color: #909090;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .card-text {
+        margin: 0;
+        width: 100%;
+        overflow-wrap: break-word;
+        padding-bottom: 2vh;
+        color: #909090;
+        font-weight: 300;
+    }
+    .link-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        .card-link {
+            color: #b0b0b0;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 3px solid #009688 !important;
+            }
+        }
+    }
+}
+
+.darkMode-loader {
+    border: 16px solid #606060;
+    border-radius: 50%;
+    border-top: 16px solid #202020;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
