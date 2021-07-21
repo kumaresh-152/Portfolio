@@ -16,7 +16,7 @@ interface ExperienceProps {
 class Experience extends Component<ExperienceProps>{
     render() {
         return (
-            <div className={"darkMode-Experience"}>
+            <div className={"Experience"}>
                 <VerticalTimeline>
                     {
                         this.props.experience.map((x: ExperienceModel, index: number) => (

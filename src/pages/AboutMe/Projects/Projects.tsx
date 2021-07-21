@@ -49,7 +49,7 @@ class Project extends Component<ProjectProps> {
         ))
 
         return (
-            this.props.data.length > 0 ? projects : <div className={"darkMode-loader"} />
+            this.props.data.length > 0 ? projects : <div className={"Loader"} />
         )
     }
 }

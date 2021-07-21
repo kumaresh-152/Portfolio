@@ -7,7 +7,7 @@ interface SkillsProps {
 
 export default function Skills(props: SkillsProps) {
     return (
-        <div className={"darkmode-skillset"}>
+        <div className={"Skillset"}>
             {
                 props.skillset.map((x: SkillSetModel, index: number) => (
                     <div key={index} className="skillset-wrapper">

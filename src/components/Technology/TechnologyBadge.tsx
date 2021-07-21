@@ -11,7 +11,7 @@ class TechnologyBadge extends Component<TechnologyBadgeProps>{
             <Badge pill key={index}>{x}</Badge>
         ))
         return (
-            <div className={"darkMode-technologyBadge-wrapper"}>
+            <div className={"TechnologyBadge-wrapper"}>
                 {technologyList}
             </div>
         )
