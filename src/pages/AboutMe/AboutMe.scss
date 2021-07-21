@@ -1,0 +1,160 @@
+@import "../../styles/variable.scss";
+
+.darkMode-AboutMe-Wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .About-wrapper {
+        .About-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .About-list {
+            padding: 2%;
+            .wave {
+                animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+                animation-duration: 2.1s; /* Change to speed up or slow down */
+                animation-iteration-count: infinite; /* Never stop waving :) */
+                transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+                display: inline-block;
+            }
+            .hyperlink {
+                display: flex;
+                width: max-content;
+                gap: 1vh;
+                padding-bottom: 1vh;
+                color: #b0b0b0;
+                text-decoration: none;
+                &:hover {
+                    border-bottom: 3px solid #009688 !important;
+                }
+            }
+        }
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+            10% {
+                transform: rotate(14deg);
+            } /* The following five values can be played with to make the waving more or less extreme */
+            20% {
+                transform: rotate(-8deg);
+            }
+            30% {
+                transform: rotate(14deg);
+            }
+            40% {
+                transform: rotate(-4deg);
+            }
+            50% {
+                transform: rotate(10deg);
+            }
+            60% {
+                transform: rotate(0deg);
+            } /* Reset for the last half to pause */
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .Education-wrapper {
+        .Education-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .Education-list {
+            display: flex;
+            padding: 2%;
+        }
+    }
+    .Experience-wrapper {
+        .Experience-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .Experience-list {
+            padding: 2%;
+        }
+    }
+    .SkillSet-wrapper {
+        .SkillSet-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .SkillSet-list {
+            padding: 2%;
+        }
+    }
+    .Projects-wrapper {
+        .Projects-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .Projects-list {
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+            row-gap: 2vh;
+            column-gap: 2vh;
+            flex-wrap: wrap;
+        }
+    }
+    .Extra-curricular-wrapper {
+        .Extra-curricular-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .Extra-curricular-list {
+            padding: 2%;
+        }
+    }
+    .Certification-wrapper {
+        .Certification-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+        .Certification-list {
+            padding: 2%;
+        }
+    }
+    .Contact-wrapper {
+        .Contact-title {
+            background-color: $border-right-color;
+            color: white;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2%;
+        }
+    }
+}
+
+@media (max-width: 48rem) {
+    .Projects-list {
+        flex-direction: column;
+        align-items: center;
+        .project-cards {
+            width: 80%;
+        }
+    }
+}
