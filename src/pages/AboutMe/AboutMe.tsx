@@ -29,7 +29,7 @@ class AboutMe extends Component<AboutMeProps>{
 
     render() {
         return (
-            <div className={"darkMode-AboutMe-Wrapper"}>
+            <div className={"AboutMe-Wrapper"}>
                 <div className="About-wrapper" id="About">
                     <div className={"About-title"}>
                         <span>
@@ -118,7 +118,6 @@ class AboutMe extends Component<AboutMeProps>{
                         />
                     </div>
                 </div>
-
                 <div className="Certification-wrapper" id="Certification">
                     <div className={"Certification-title"}>
                         <span>

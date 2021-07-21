@@ -141,7 +141,7 @@ export class App extends Component<AppProps, AppState> {
     ]
 
     return (
-      <Container className={"darkmode-wrapper"}>
+      <Container className={"App-wrapper"}>
         <div className="SideMenu">
           <SidebarMenu
             list={SidebarMenuList}

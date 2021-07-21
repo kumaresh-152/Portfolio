@@ -27,7 +27,7 @@ class Education extends Component<EducationProps>{
             </div >
         ))
         return (
-            <div className={"darkMode-Education"}>
+            <div className={"Education"}>
                 {
                     list
                 }

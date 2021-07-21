@@ -26,7 +26,7 @@ class SidebarMenu extends Component<SidebarMenuProps> {
         ))
 
         return (
-            <div className={"darkMode-sideMenu-wrapper"}>
+            <div className={"SideMenu-wrapper"}>
                 <div className={"sideMenu-name-wrapper"}>
                     <div
                         className={"sideMenu-name"}

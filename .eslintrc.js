@@ -3,7 +3,7 @@ module.exports = {
   'extends': [
     'plugin:react/recommended'
   ],
-  plugins: ['redux-saga', 'react', 'jsx-a11y', '@typescript-eslint', 'react-hooks'],
+  plugins: ['react', 'jsx-a11y', '@typescript-eslint', 'react-hooks'],
   env: {
     jest: true,
     browser: true,
@@ -82,8 +82,6 @@ module.exports = {
     'react/require-extension': 0,
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
-    'redux-saga/no-yield-in-race': 2,
-    'redux-saga/yield-effects': 2,
     'require-yield': 0,
   },
   settings: {

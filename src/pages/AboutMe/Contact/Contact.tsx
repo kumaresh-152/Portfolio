@@ -22,7 +22,7 @@ class Contact extends Component<ContactProps> {
                 </div>
         ))
         return (
-            <div className={"dark-Card"}>
+            <div className={"Contact-Card"}>
                 {contact}
             </div>
         )

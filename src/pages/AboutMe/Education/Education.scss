@@ -1,6 +1,6 @@
 @import "../../../styles/variable.scss";
 
-.darkMode-Education {
+.Education {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 48rem) {
-    .darkMode-Education {
+    .Education {
         display: flex;
         flex-direction: column;
         grid-row-gap: 3vh;
