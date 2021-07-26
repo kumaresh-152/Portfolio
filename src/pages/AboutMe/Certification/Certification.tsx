@@ -24,7 +24,7 @@ class Certification extends Component<CertificationProps> {
                     <tr>
                         {
                             tableHeaders.map((x: string, index: number) => (
-                                <th key={`header${{ index }}`}>{x.toLocaleUpperCase()}</th>
+                                <th key={`certification-header${index}`}>{x.toLocaleUpperCase()}</th>
                             ))
                         }
                     </tr>
@@ -32,7 +32,7 @@ class Certification extends Component<CertificationProps> {
                 <tbody>
                     {
                         this.props.certificationList.map((x: CertificationModel, index: number) => (
-                            <tr key={`body${{ index }}`}>
+                            <tr key={`certification-body${index}`}>
                                 <th className="title">
                                     <a className="hyperlink" href={x.website.link} target="_blank" rel="noopener noreferrer"> {x.title}</a>
                                 </th>

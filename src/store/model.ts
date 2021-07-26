@@ -1,5 +1,5 @@
 export interface Sidebar {
-    icon: string;
+    icon: JSX.Element;
     title: string;
 }
 
@@ -47,7 +47,7 @@ export interface CertificationModel {
 }
 
 export interface ContactModel {
-    icon: string;
+    icon: JSX.Element;
     value: string;
     url?: string;
     isLink: boolean;

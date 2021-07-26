@@ -22,10 +22,6 @@ interface AboutMeProps {
 
 class AboutMe extends Component<AboutMeProps> {
 
-    constructor(allProps: AboutMeProps) {
-        super(allProps);
-    }
-
     render() {
         return (
             <div className={'AboutMe-Wrapper'}>
@@ -36,10 +32,6 @@ class AboutMe extends Component<AboutMeProps> {
                         </span>
                     </div>
                     <div className={'About-list'}>
-                        {/* 
-                        Let's make something special.
-                        That's why I’m excited to make a big impact at a high growth company.
-                         */}
                         <h1>
                             I want to <span className="highlight">make things</span><br />
                             that&nbsp;<span className="underline">make a difference.</span>
@@ -62,7 +54,7 @@ class AboutMe extends Component<AboutMeProps> {
                         </h3>
                         <h3>
                             Outside work, I occasionally sketch.
-                            <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.google.com">
+                            <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pointed_bristles">
                                 <Instagram />pointed_bristles
                             </a>
                         </h3>
