@@ -1,22 +1,21 @@
 /* eslint-disable no-console */
 import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
-import moment from "moment";
-import React, { Component } from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import TechnologyBadge from "../../../components/Technology/TechnologyBadge";
-import { ExperienceModel } from "../../../store/model";
+import moment from 'moment';
+import React, { Component } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import TechnologyBadge from '../../../components/Technology/TechnologyBadge';
+import { ExperienceModel } from '../../../store/model';
 import './Experience.scss';
 
-
 interface ExperienceProps {
-    experience: ExperienceModel[]
+    experience: ExperienceModel[];
 }
 
-class Experience extends Component<ExperienceProps>{
+class Experience extends Component<ExperienceProps> {
     render() {
         return (
-            <div className={"Experience"}>
+            <div className={'Experience'}>
                 <VerticalTimeline>
                     {
                         this.props.experience.map((x: ExperienceModel, index: number) => (
@@ -24,9 +23,9 @@ class Experience extends Component<ExperienceProps>{
                                 key={index}
                                 className="vertical-timeline-element--work"
                                 iconStyle={{
-                                    background: "#AE944F",
-                                    color: "#fff",
-                                    textAlign: "center",
+                                    background: '#AE944F',
+                                    color: '#fff',
+                                    textAlign: 'center',
                                 }}
                                 icon={<span><HourglassEmptyIcon /></span>}
                             >
@@ -41,8 +40,8 @@ class Experience extends Component<ExperienceProps>{
                                 </h4>
                                 <div className={'job-description'}>
                                     {
-                                        x.description.map((data: string, index: number) => (
-                                            <span key={index}>
+                                        x.description.map((data: string, descriptionindex: number) => (
+                                            <span key={descriptionindex}>
                                                 - &nbsp;
                                                 {data}
                                                 <br />
@@ -51,7 +50,7 @@ class Experience extends Component<ExperienceProps>{
                                     }
                                 </div>
                                 <TechnologyBadge technology={x.technology} />
-                                <div className={"date"}>
+                                <div className={'date'}>
                                     {
                                         <span>
                                             {
@@ -61,7 +60,7 @@ class Experience extends Component<ExperienceProps>{
                                             -
                                             &nbsp;
                                             {
-                                                x.dateOfLeaving.toLocaleLowerCase() === "" ? "present" : moment(x.dateOfLeaving, 'YYYY/MM/DD').format('MMM-YYYY').toString()
+                                                x.dateOfLeaving.toLocaleLowerCase() === '' ? 'present' : moment(x.dateOfLeaving, 'YYYY/MM/DD').format('MMM-YYYY').toString()
                                             }
                                         </span>
                                     }
@@ -70,19 +69,18 @@ class Experience extends Component<ExperienceProps>{
                         ))
                     }
                     <VerticalTimelineElement
-                        key={"nochild"}
+                        key={'nochild'}
                         className="vertical-timeline-element--no-children"
                         iconStyle={{
-                            background: "#AE944F",
-                            color: "#fff",
-                            textAlign: "center",
+                            background: '#AE944F',
+                            color: '#fff',
+                            textAlign: 'center',
                         }}
                         icon={<span><HourglassEmptyIcon /></span>}
-                    >
-                    </VerticalTimelineElement>
+                    />
                 </VerticalTimeline>
             </div>
-        )
+        );
     }
 }
 export default Experience;

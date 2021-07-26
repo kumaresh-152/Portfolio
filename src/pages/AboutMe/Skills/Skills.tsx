@@ -1,13 +1,13 @@
-import { SkillSetModel } from "../../../store/model";
-import './Skills.scss'
+import { SkillSetModel } from '../../../store/model';
+import './Skills.scss';
 
 interface SkillsProps {
-    skillset: SkillSetModel[]
+    skillset: SkillSetModel[];
 }
 
 export default function Skills(props: SkillsProps) {
     return (
-        <div className={"Skillset"}>
+        <div className={'Skillset'}>
             {
                 props.skillset.map((x: SkillSetModel, index: number) => (
                     <div key={index} className="skillset-wrapper">
@@ -17,5 +17,5 @@ export default function Skills(props: SkillsProps) {
                 ))
             }
         </div>
-    )
+    );
 }

@@ -1,16 +1,16 @@
-import { Component } from "react";
-import { EducationModel } from "../../../store/model";
+import { Component } from 'react';
+import { EducationModel } from '../../../store/model';
 import './Education.scss';
 
 interface EducationProps {
-    education: EducationModel[]
+    education: EducationModel[];
 }
 
-class Education extends Component<EducationProps>{
+class Education extends Component<EducationProps> {
     render() {
         let list = this.props.education.map((x: EducationModel, index: number) => (
             <div key={`Education${x.degree}${index}`} className={`Education-wrapper`}>
-                <div className={"Education-degree"}>
+                <div className={'Education-degree'}>
                     <h1>
                         {x.degree}
                     </h1>
@@ -25,9 +25,9 @@ class Education extends Component<EducationProps>{
                     </div>
                 </div>
             </div >
-        ))
+        ));
         return (
-            <div className={"Education"}>
+            <div className={'Education'}>
                 {
                     list
                 }

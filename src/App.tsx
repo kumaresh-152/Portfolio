@@ -28,7 +28,6 @@ import AboutMe from './pages/AboutMe/AboutMe';
 import SidebarMenu from './pages/AboutMe/SidebarMenu/SidebarMenu';
 import { CertificationModel, ContactModel, EducationModel, ExperienceModel, ProjectModel, Sidebar, SkillSetModel } from './store/model';
 
-
 interface AppProps {
 }
 
@@ -50,7 +49,7 @@ export class App extends Component<AppProps, AppState> {
       experience: [],
       projects: [],
       resumeUrl: ''
-    }
+    };
     this.onSidebarClick = this.onSidebarClick.bind(this);
   }
 
@@ -63,27 +62,27 @@ export class App extends Component<AppProps, AppState> {
           experience: response.data.experience,
           projects: response.data.projects,
           resumeUrl: response.data.resumeUrl
-        })
+        });
       })
       .catch((err) => {
-        console.log('err', err)
-      })
+        console.log('err', err);
+      });
   }
 
   componentDidMount() {
-    this.fetchData()
+    this.fetchData();
   }
 
   onSidebarClick(data: string) {
     if (data === 'Resume') {
-      window.open(this.state.resumeUrl, "_blank");
+      window.open(this.state.resumeUrl, '_blank');
     }
     else {
       let node = document.getElementById(data);
       if (node) {
         window.scrollTo({
           top: node.offsetTop,
-          behavior: "smooth"
+          behavior: 'smooth'
         });
       }
     }
@@ -92,15 +91,15 @@ export class App extends Component<AppProps, AppState> {
   render() {
 
     let SidebarMenuList: Sidebar[] = [
-      { icon: <FaceIcon />, title: "About" },
-      { icon: <SchoolIcon />, title: "Education" },
-      { icon: <TrendingUpIcon />, title: "Experience" },
-      { icon: <SettingsIcon />, title: "SkillSet" },
-      { icon: <CodeIcon />, title: "Projects" },
-      { icon: <StarIcon />, title: "Certification" },
-      { icon: <MailIcon />, title: "Contact" },
-      { icon: <DescriptionIcon />, title: "Resume" }
-    ]
+      { icon: <FaceIcon />, title: 'About' },
+      { icon: <SchoolIcon />, title: 'Education' },
+      { icon: <TrendingUpIcon />, title: 'Experience' },
+      { icon: <SettingsIcon />, title: 'SkillSet' },
+      { icon: <CodeIcon />, title: 'Projects' },
+      { icon: <StarIcon />, title: 'Certification' },
+      { icon: <MailIcon />, title: 'Contact' },
+      { icon: <DescriptionIcon />, title: 'Resume' }
+    ];
 
     let contact: ContactModel[] = [
       {
@@ -126,7 +125,7 @@ export class App extends Component<AppProps, AppState> {
         url: 'https://www.linkedin.com/in/b-kumaresh',
         isLink: true
       },
-    ]
+    ];
 
     let skills: SkillSetModel[] = [
       { name: 'react', logo: react },
@@ -138,14 +137,14 @@ export class App extends Component<AppProps, AppState> {
       { name: 'C/C++', logo: cpp },
       { name: 'C#', logo: csharp },
       { name: 'Github', logo: git },
-    ]
+    ];
 
     return (
-      <Container className={"App-wrapper"}>
+      <Container className={'App-wrapper'}>
         <div className="SideMenu">
           <SidebarMenu
             list={SidebarMenuList}
-            onClick={(data: string) => { this.onSidebarClick(data) }}
+            onClick={(data: string) => { this.onSidebarClick(data); }}
           />
         </div>
         <div className="AboutMe">
@@ -159,7 +158,7 @@ export class App extends Component<AppProps, AppState> {
           />
         </div>
       </Container>
-    )
+    );
   }
 }
 
