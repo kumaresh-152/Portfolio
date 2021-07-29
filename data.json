@@ -1,0 +1,158 @@
+{
+    "education": [
+        {
+            "institution": "SASTRA Deemed to be University",
+            "address": "Thanjavur, Tamil Nadu",
+            "degree": "B.Tech - Computer Science and Engg.",
+            "yearOfPassing": "2019",
+            "grade": "7.53"
+        },
+        {
+            "institution": "D.A.V sec sr school",
+            "address": "Chennai, Tamil Nadu",
+            "degree": "Higher Secondary Education",
+            "yearOfPassing": "2015",
+            "grade": "470/500"
+        },
+        {
+            "institution": "Chinmaya Vidyalaya",
+            "address": "Chennai, Tamil Nadu",
+            "degree": "Secondary Education",
+            "yearOfPassing": "2013",
+            "grade": "9.8"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Honeywell Technology Solution",
+            "role": "Software Engg.",
+            "address": "Madurai, Tamil Nadu.",
+            "dateOfJoining": "2019/10/19",
+            "dateOfLeaving": "",
+            "technology": [
+                "React",
+                "Typescript",
+                "Sass",
+                "Redux"
+            ],
+            "description": [
+                "Frontend developer, as part of an agile team, converting the requirements into web application. ",
+                "Developing highly responsive, maintainable, and reusable user interface components using React concepts and React.js workflows(Redux).",
+                "Was an acting Scrum Master for a brief period of 3 months."
+            ]
+        },
+        {
+            "company": "Symantec Software & Services",
+            "role": "Intern",
+            "address": "Chennai, Tamil Nadu.",
+            "dateOfJoining": "2019/01/07",
+            "dateOfLeaving": "2019/06/30",
+            "technology": [
+                "Python",
+                "Objective C"
+            ],
+            "description": [
+                "Flight Data Recorder agent is a software component which is used as an EDR (Endpoint Detection and Remediation).",
+                "Convertion of Python2 codebase to Python3."
+            ]
+        },
+        {
+            "company": "CHEMOIL Information Pvt. Ltd",
+            "role": "Intern",
+            "address": "Chennai, Tamil Nadu.",
+            "dateOfJoining": "2017/05/15",
+            "dateOfLeaving": "2017/06/15",
+            "technology": [
+                "HTML5",
+                "CSS",
+                "JavaScript"
+            ],
+            "description": [
+                "In-plant training involving scripting in JavaScript, designing in HTML5, CSS, testing and data warehousing. "
+            ]
+        },
+        {
+            "company": "TAFE",
+            "role": "Intern",
+            "address": "Chennai, Tamil Nadu.",
+            "dateOfJoining": "2016/11/15",
+            "dateOfLeaving": "2016/12/15",
+            "technology": [],
+            "description": [
+                "Underwent an In-plant training in the Infotech division of the company."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "react",
+            "logo": "ashd"
+        },
+        {
+            "name": "typescript",
+            "logo": "ashd"
+        },
+        {
+            "name": "HTML",
+            "logo": "ashd"
+        },
+        {
+            "name": "c++",
+            "logo": "ashd"
+        },
+        {
+            "name": "Git",
+            "logo": "ashd"
+        },
+        {
+            "name": "Jira",
+            "logo": "ashd"
+        }
+    ],
+    "certification": [
+        {
+            "technology": [
+                "CSS",
+                "JS",
+                "HTML"
+            ],
+            "title": "CSS - The Complete Guide 2021(incl. Flexbox, Grid & Sass)",
+            "website": {
+                "name": "Udemy",
+                "link": "https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/"
+            }
+        },
+        {
+            "technology": [
+                "Python",
+                "Data Analysis",
+                "Ai"
+            ],
+            "title": "Learning Python for Data Analysis and Visualization",
+            "website": {
+                "name": "Udemy",
+                "link": "https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/"
+            }
+        },
+        {
+            "technology": [
+                "C#"
+            ],
+            "title": "C# Basics for Beginners: Learn C# fundamental by Coding",
+            "website": {
+                "name": "Udemy",
+                "link": "https://www.udemy.com/course/csharp-tutorial-for-beginners/"
+            }
+        }
+    ],
+    "projects": [
+        {
+            "title": "Portfolio",
+            "description": "The first project. Created a simple portfolio of my works.",
+            "githubLink": "https://github.com/kumaresh-152",
+            "liveDemoLink": "https://google.com",
+            "imageLink": ""
+        }
+    ],
+    "resumeUrl": "https://google.com"
+}
