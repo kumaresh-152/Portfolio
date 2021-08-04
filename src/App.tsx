@@ -79,9 +79,10 @@ export class App extends Component<AppProps, AppState> {
     }
     else {
       let node = document.getElementById(data);
-      if (node) {
+      let node1 = document.getElementsByClassName('navbar')
+      if (node && node1) {
         window.scrollTo({
-          top: node.offsetTop,
+          top: node.offsetTop - node1[0].clientHeight,
           behavior: 'smooth'
         });
       }
@@ -141,22 +142,18 @@ export class App extends Component<AppProps, AppState> {
 
     return (
       <Container className={'App-wrapper'}>
-        <div className="SideMenu">
-          <SidebarMenu
-            list={SidebarMenuList}
-            onClick={(data: string) => { this.onSidebarClick(data); }}
-          />
-        </div>
-        <div className="AboutMe">
-          <AboutMe
-            education={this.state.education}
-            experience={this.state.experience}
-            certification={this.state.certification}
-            skills={skills}
-            contact={contact}
-            projects={this.state.projects}
-          />
-        </div>
+        <SidebarMenu
+          list={SidebarMenuList}
+          onClick={(data: string) => { this.onSidebarClick(data); }}
+        />
+        <AboutMe
+          education={this.state.education}
+          experience={this.state.experience}
+          certification={this.state.certification}
+          skills={skills}
+          contact={contact}
+          projects={this.state.projects}
+        />
       </Container>
     );
   }

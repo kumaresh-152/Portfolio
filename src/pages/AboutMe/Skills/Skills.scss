@@ -14,13 +14,23 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+        width: 8%;
         .skillset-logo {
-            width: 10vh;
+            width: 100%;
         }
         .skillset-name {
             padding: 2vh;
             color: #a0a0a0;
             text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 90rem) {
+    .skillset-wrapper {
+        width: 25% !important;
+        .skillset-logo {
+            width: 50% !important;
         }
     }
 }

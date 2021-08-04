@@ -18,7 +18,7 @@ export interface ExperienceModel {
     dateOfJoining: string;
     dateOfLeaving: string;
     technology: string[];
-    experience: string;
+    experience?: string;
     description: string[];
 }
 

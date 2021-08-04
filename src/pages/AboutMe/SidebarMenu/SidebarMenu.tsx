@@ -1,7 +1,7 @@
 import { Component } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Sidebar } from '../../../store/model';
 import './SidebarMenu.scss';
-
 interface SidebarMenuProps {
     list: Sidebar[];
     onClick: Function;
@@ -10,48 +10,30 @@ interface SidebarMenuProps {
 class SidebarMenu extends Component<SidebarMenuProps> {
 
     render() {
-        const { list } = this.props;
-        let sideMenuList = list.map((x: Sidebar, index: number) => (
-            <div
-                key={`sideMenu${x.title}${index}`}
-                className={'sideMenu-list-wrapper'}
-                onClick={() => { this.props.onClick(x.title); }}
-            >
-                {x.icon}
-                <span className={'sideMenu-list-title'}>
-                    &nbsp;{x.title}
-                </span>
-            </div >
-        ));
-
         return (
-            <div className={'SideMenu-wrapper'}>
-                <div className={'sideMenu-name-wrapper'}>
-                    <div
-                        className={'sideMenu-name'}
-                        onClick={() => {
-                            let node = document.getElementById('About');
-                            if (node) {
-                                window.scrollTo({
-                                    top: node.offsetTop,
-                                    behavior: 'smooth'
-                                });
+            <Navbar expand="xl" fixed='top' >
+                <Container>
+                    <Navbar.Brand>
+                        Kumaresh B
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            {
+                                this.props.list.map((x: Sidebar, index: number) => (
+                                    <Nav.Link onClick={() => { this.props.onClick(x.title); }}>
+                                        {x.icon}
+                                        <span className={'sideMenu-list-title'}>
+                                            &nbsp;{x.title}
+                                        </span>
+                                    </Nav.Link>
+                                ))
                             }
-                        }}
-                    >
-                        <h2 className="name">
-                            B Kumaresh
-                        </h2>
-                        <span className="designation">
-                            Software Engineer
-                        </span>
-                    </div>
-                </div>
-                <div className={'sideMenu-lists'}>
-                    {sideMenuList}
-                </div>
-            </div >
-        );
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        )
     }
 }
 

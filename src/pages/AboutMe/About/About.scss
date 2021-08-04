@@ -1,0 +1,95 @@
+.About {
+    display: flex;
+    flex-direction: row;
+    padding: 0% 8%;
+    .Intro {
+        display: flex;
+        flex-direction: column;
+        .greetings {
+            font-size: 1.25rem;
+            font-weight: 100;
+            color: #909090;
+        }
+        .name {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #b0b0b0;
+            line-height: 1.5;
+        }
+        .designation {
+            color: #909090;
+            font-weight: 600;
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            color: #e0e0e0;
+            margin-top: 3vh;
+            max-width: 75%;
+            h2 {
+                padding-top: 2vh;
+                font-weight: 100;
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .Insta {
+        h2 {
+            font-weight: 100;
+            font-size: 1.5rem;
+            color: #909090;
+            margin-bottom: 5%;
+        }
+        .carousel {
+            max-height: 50vh;
+            .carousel-inner {
+                box-shadow: 16px 16px 32px 0px rgb(0 0 0 / 40%);
+                .card {
+                    background-color: #404040;
+                    height: 50vh;
+                    align-items: center;
+                    .card-img {
+                        width: 40vh;
+                        height: 47vh;
+                        padding: 4%;
+                    }
+                }
+                .for-more-details {
+                    .card {
+                        flex-direction: row;
+                        align-items: center;
+                        .card-body {
+                            font-size: 2rem;
+                            .card-text {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                color: #e0e0e0;
+                                .hyperlink {
+                                    color: #101010;
+                                    text-decoration: none;
+                                    &:hover {
+                                        border-bottom: 3px solid #009688 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel-control-next,
+            .carousel-control-prev {
+                color: #303030;
+            }
+        }
+    }
+}
+
+@media (max-width: 90rem) {
+    .About {
+        flex-direction: column;
+        .Insta {
+            margin-top: 2%;
+        }
+    }
+}

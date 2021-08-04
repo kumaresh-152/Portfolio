@@ -1,39 +1,32 @@
-@import "../../../styles/variable.scss";
-
-.SideMenu-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    background: #404040;
-    overflow: auto;
-    .sideMenu-name-wrapper {
-        border-bottom: 1px solid #202020;
-        padding: 1rem;
-        .sideMenu-name {
-            display: flex;
-            flex-direction: column;
+.navbar {
+    padding: 0 !important;
+    .container {
+        max-width: 100%;
+        padding: 0;
+        .navbar-brand {
+            font-size: 2rem;
+            color: white !important;
+            padding: 1%;
+            text-transform: uppercase;
+            margin-left: 8%;
+        }
+        .navbar-collapse,
+        .collapse {
             justify-content: flex-end;
-            align-items: center;
-            &:hover {
-                cursor: pointer;
-            }
-            .name {
-                color: $text-secondary-color;
-            }
-            .designation {
-                color: $title-primary-color;
+            padding: 1%;
+            .me-auto,
+            .navbar-nav {
+                .navbar-light,
+                .navbar-nav,
+                .nav-link {
+                    color: white;
+                }
             }
         }
     }
-    .sideMenu-lists {
-        color: $text-secondary-color;
-        .sideMenu-list-wrapper {
-            display: flex;
-            padding: 1rem;
-            &:hover {
-                cursor: pointer;
-                background-color: $colou1;
-            }
-        }
+}
+@media (max-width: 90rem){
+    .navbar-collapse{
+        justify-content: space-between;
     }
 }

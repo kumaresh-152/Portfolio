@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
-import { Instagram } from '@material-ui/icons';
 import React, { Component } from 'react';
 import { CertificationModel, ContactModel, EducationModel, ExperienceModel, ProjectModel, SkillSetModel } from '../../store/model';
+import About from './About/About';
 import './AboutMe.scss';
 import Certification from './Certification/Certification';
 import Contact from './Contact/Contact';
@@ -10,7 +10,6 @@ import Education from './Education/Education';
 import Experience from './Experience/Experience';
 import Project from './Projects/Projects';
 import Skills from './Skills/Skills';
-
 interface AboutMeProps {
     education: EducationModel[];
     certification: CertificationModel[];
@@ -32,33 +31,7 @@ class AboutMe extends Component<AboutMeProps> {
                         </span>
                     </div>
                     <div className={'About-list'}>
-                        <h1>
-                            I want to <span className="highlight">make things</span><br />
-                            that&nbsp;<span className="underline">make a difference.</span>
-                        </h1>
-                        <h1 className="heading">
-                            Hi there
-                            <span className="wave">👋🏻</span><br />
-                            I&apos;m KUMARESH, nice to meet you.
-                        </h1>
-                        <h2>
-                            Frontend Developer, with about two year of experience in developing web applications using React,
-                            TypeScript, HTML5, and SASS.
-                        </h2>
-                        <h3>
-                            A collaborator and an active learner who seeks out opportunities and
-                            challenges that brings the best from me. with interest in UI/UX design.
-                            developer with a passion for thoughtful UI design,seeks out opportunities and challenges.
-                            who believes that technology is the game-changer and want to be a part of the change.
-                            sought out opportunities and challenges that are meaningful to me.
-                        </h3>
-                        <h3>
-                            Outside work, I occasionally sketch.
-                            <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pointed_bristles">
-                                <Instagram />pointed_bristles
-                            </a>
-                        </h3>
-
+                        <About />
                     </div>
                 </div>
                 <div className="Education-wrapper" id="Education">
