@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1d9d2413.chunk.css",
-    "main.js": "/Portfolio/static/js/main.0e5cf4d2.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.0e5cf4d2.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.bc9995d5.chunk.css",
+    "main.js": "/Portfolio/static/js/main.642e04b7.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.642e04b7.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.87968753.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.87968753.js.map",
     "static/css/2.2aa38b9c.chunk.css": "/Portfolio/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.b5c62013.chunk.js": "/Portfolio/static/js/2.b5c62013.chunk.js",
-    "static/js/2.b5c62013.chunk.js.map": "/Portfolio/static/js/2.b5c62013.chunk.js.map",
+    "static/js/2.1bde1626.chunk.js": "/Portfolio/static/js/2.1bde1626.chunk.js",
+    "static/js/2.1bde1626.chunk.js.map": "/Portfolio/static/js/2.1bde1626.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.2aa38b9c.chunk.css.map": "/Portfolio/static/css/2.2aa38b9c.chunk.css.map",
-    "static/css/main.1d9d2413.chunk.css.map": "/Portfolio/static/css/main.1d9d2413.chunk.css.map",
-    "static/js/2.b5c62013.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b5c62013.chunk.js.LICENSE.txt",
+    "static/css/main.bc9995d5.chunk.css.map": "/Portfolio/static/css/main.bc9995d5.chunk.css.map",
+    "static/js/2.1bde1626.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.1bde1626.chunk.js.LICENSE.txt",
     "static/media/C++.0a81196c.png": "/Portfolio/static/media/C++.0a81196c.png",
     "static/media/Typescript.17936c69.png": "/Portfolio/static/media/Typescript.17936c69.png",
+    "static/media/charlie_chaplin.38a7217d.jpg": "/Portfolio/static/media/charlie_chaplin.38a7217d.jpg",
     "static/media/csharp.7f58ab59.png": "/Portfolio/static/media/csharp.7f58ab59.png",
+    "static/media/ganesha.ef76853f.jpg": "/Portfolio/static/media/ganesha.ef76853f.jpg",
+    "static/media/joker.fbc4d5fc.jpg": "/Portfolio/static/media/joker.fbc4d5fc.jpg",
+    "static/media/nataraja.402b8f2f.jpg": "/Portfolio/static/media/nataraja.402b8f2f.jpg",
     "static/media/python.9431343c.png": "/Portfolio/static/media/python.9431343c.png",
     "static/media/sass.3fc39440.png": "/Portfolio/static/media/sass.3fc39440.png"
   },
   "entrypoints": [
     "static/js/runtime-main.87968753.js",
     "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.b5c62013.chunk.js",
-    "static/css/main.1d9d2413.chunk.css",
-    "static/js/main.0e5cf4d2.chunk.js"
+    "static/js/2.1bde1626.chunk.js",
+    "static/css/main.bc9995d5.chunk.css",
+    "static/js/main.642e04b7.chunk.js"
   ]
 }

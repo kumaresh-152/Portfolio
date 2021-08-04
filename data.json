@@ -36,7 +36,7 @@
                 "Redux"
             ],
             "description": [
-                "Frontend developer, as part of an agile team, converting the requirements into web application. ",
+                "Frontend developer, as part of an agile scrum team, converting requirements into web applications. ",
                 "Developing highly responsive, maintainable, and reusable user interface components using React concepts and React.js workflows(Redux).",
                 "Was an acting Scrum Master for a brief period of 3 months."
             ]
@@ -83,32 +83,6 @@
             ]
         }
     ],
-    "skills": [
-        {
-            "name": "react",
-            "logo": "ashd"
-        },
-        {
-            "name": "typescript",
-            "logo": "ashd"
-        },
-        {
-            "name": "HTML",
-            "logo": "ashd"
-        },
-        {
-            "name": "c++",
-            "logo": "ashd"
-        },
-        {
-            "name": "Git",
-            "logo": "ashd"
-        },
-        {
-            "name": "Jira",
-            "logo": "ashd"
-        }
-    ],
     "certification": [
         {
             "technology": [
@@ -148,11 +122,11 @@
     "projects": [
         {
             "title": "Portfolio",
-            "description": "The first project. Created a simple portfolio of my works.",
+            "description": "The react first project. Created a simple portfolio.",
             "githubLink": "https://github.com/kumaresh-152",
-            "liveDemoLink": "https://google.com",
+            "liveDemoLink": "https://kumaresh-152.github.io/Portfolio/",
             "imageLink": ""
         }
     ],
-    "resumeUrl": "https://google.com"
+    "resumeUrl": "https://drive.google.com/file/d/1y9g70kFg_VLrTlyLPY5lCX-Q6l75aK5K/view?usp=sharing"
 }
